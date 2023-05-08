@@ -191,18 +191,20 @@ nav ul li a:hover {
     transform: translate(370px);
   }
   
-/* Footer */
+/* Footer 
 
 footer {
 
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     background-color: black;
     display: flex;
     justify-content: space-between;
     color: white;
     align-items: center;
     margin-top: 20vh;
+
+    ;
 
 
 }
@@ -257,7 +259,7 @@ footer ul li div img {
 
 }
 
-
+*/
 
 /* Font del H1 */
 
@@ -368,9 +370,6 @@ footer ul li div img {
     background-image: url(../assets/relle1.jpg);
 
 }
-
-
-
 
 
 
@@ -844,4 +843,29 @@ height: 100%;
     }
 
 
+}
+
+.img-container-materiales{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-container-materiales div{
+width: 20%;
+height: 100%;
+
+}
+
+.img-container-materiales div img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.img-container-materiales div p{
+
+    display: flex;
+align-items: center;
+    font-size: small;
+    
 }
