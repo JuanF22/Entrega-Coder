@@ -1,0 +1,167 @@
+/* Seccion con Grid - Es la Galeria de Fotos */
+.GridAreaPadre {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "hed hed hed hed hed " "a1 s1 s1 s1 a2" "a1 s2 s2 s2 a2" "a1 s3 s3 s3 a2" "foot foot foot foot foot";
+}
+
+.headerGF {
+  background-color: beige;
+  grid-area: hed;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.headerGF div {
+  width: 10%;
+  /* height: 20vh;*/
+}
+.headerGF h1 {
+  text-decoration: underline;
+}
+.headerGF ul {
+  display: flex;
+  list-style: none;
+  margin-left: 15%;
+}
+.headerGF li {
+  padding: 5%;
+  width: 30%;
+}
+.headerGF a {
+  color: black;
+  text-decoration: none;
+}
+.headerGF a:hover {
+  color: darkgoldenrod;
+  text-shadow: black 4px 7px;
+}
+
+.section1GF {
+  grid-area: s1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.section1GF img {
+  width: 125px;
+  margin: 2px;
+}
+
+.section2GF {
+  grid-area: s2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.section2GF img {
+  width: 125px;
+  margin: 2px;
+}
+
+.section3GF {
+  grid-area: s3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.section3GF img {
+  width: 125px;
+  margin: 2px;
+}
+
+.aside1GF {
+  background-color: rgb(203, 203, 182);
+  grid-area: a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 45px;
+  position: relative;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slider img {
+  width: 100%;
+  animation: slide 2s infinite alternate;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.aside2GF {
+  background-color: rgb(203, 203, 182);
+  grid-area: a2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45px;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.footerGF {
+  background-color: black;
+  grid-area: foot;
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  margin-top: 20vh;
+}
+.footerGF h4 {
+  margin-left: 4%;
+}
+.footerGF a {
+  color: white;
+}
+.footerGF p {
+  margin-left: 4%;
+}
+.footerGF ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+}
+.footerGF li {
+  text-decoration: none;
+  padding: 6%;
+}
+.footerGF a {
+  color: white;
+  text-decoration: none;
+}
+.footerGF div {
+  width: 20%;
+  height: 20%;
+}
+.footerGF img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=content-gf.css.map */

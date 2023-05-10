@@ -1,0 +1,25 @@
+/* Contacto */
+.contacto1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: 35vh;
+  background-size: cover;
+  background-position-y: 50%;
+  background-image: url(../assets/VLY__33.jpg);
+}
+
+.contactoLi ul {
+  display: grid;
+  list-style: none;
+  margin-left: 35%;
+}
+.contactoLi ul li {
+  font-size: 24px;
+  font-style: italic;
+  color: black;
+  padding: 5%;
+  width: 30%;
+}/*# sourceMappingURL=foto-contacto.css.map */
