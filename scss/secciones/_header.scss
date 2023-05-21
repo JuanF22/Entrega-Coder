@@ -6,28 +6,55 @@ nav {
     background-color: beige;
     display: flex;
     align-items: center;
+    
+}
 
-    h1 {
-        text-decoration: underline;
+nav h1 {
+    text-decoration: underline;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 15%;
+}
+
+nav li {
+    padding: 5%;
+    width: 30%;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: darkgoldenrod;
+    text-shadow: black 4px 7px;
+}
+
+
+
+@media(max-width: 768px) {
+    nav{
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        height: 40vh;
+       
     }
-
-    ul {
-        display: flex;
-        list-style: none;
-        margin-left: 15%;
+    nav div{
+        display: flex ;
     }
-
-    li {
-        padding: 5%;
-        width: 30%;
+    nav ul {
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
     }
-
-    a {
-        color: black;
-        text-decoration: none;
-        &:hover {
-            color: darkgoldenrod;
-            text-shadow: black 4px 7px;
-        }
+    
+    nav li {
+        width: 50%;
     }
 }
+

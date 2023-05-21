@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-evenly;
 
+
     div {
         width: 20%;
         height: 300px;
@@ -17,9 +18,32 @@
 
     h3 {
         color: white;
+        padding: 15px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .imgContainer div {
+        width: 35%;
+        height: 250px;
+        display: flex;
+        margin: 30px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .imgContainer h3{
+
+
+    }
+}
 /**/
 
 .imgContainer2 {
@@ -40,12 +64,34 @@
 
     h3 {
         color: white;
+        padding: 15px;
+    
     }
     a{
         text-decoration: none;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .imgContainer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .imgContainer2 div {
+        width: 50%;
+        height: 400px;
+        display: flex;
+        margin: 30px;
+        justify-content: center;
+        
+    }
+    .imgContainer2 h3{
+        font-size: 20px;
+    }
+}
 
 /* Hover para fotos del index */
 
@@ -75,17 +121,33 @@
 .video-medio-index {
 
     margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
     display: flex;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    width: 50%;
 
     div {
         border: 15px solid transparent;
         border-image: linear-gradient(to bottom right, beige, rgb(182, 182, 113)) 1;
-        max-width: 100%;
+        max-width: 50%;
         max-height: 100%;
-        transform: translate(370px);
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .video-medio-index {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+
+    .video-medio-index div {
+        border: 15px;
+        border: 5px black solid;
+        border-image: linear-gradient(to bottom right, beige, rgb(182, 182, 113)) 1;
     }
 }
